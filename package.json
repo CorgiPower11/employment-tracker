@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node connection.js",
+    "start": "node index.js",
     "watch": "nodemon index.js"
   },
   "repository": {
@@ -18,13 +18,17 @@
     "url": "https://github.com/CorgiPower11/employee-tracker/issues",
     "dependencies": {
       "console.table": "^0.10.0",
-      "inquirer": "^8.2.1"
+      "inquirer": "^8.2.1",
+      "mysql2": "^2.3.3"
     }
   },
   "homepage": "https://github.com/CorgiPower11/employee-tracker#readme",
   "dependencies": {
     "console.table": "^0.10.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "inquirer": "^8.2.1",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3"
   }
 }

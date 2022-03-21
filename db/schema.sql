@@ -11,7 +11,7 @@ CREATE TABLE department(
 CREATE TABLE roles(
   id INTEGER NOT NULL,
   title VARCHAR(30) NOT NULL
-  salary DECIMAL(10,2) NOT NULL
+  salary DECIMAL(10, 2) NOT NULL
   department_id INTEGER NOT NULL
     FOREIGN KEY (department_id)
         REFERENCES department(id)
@@ -25,7 +25,7 @@ CREATE TABLE employee(
   role_id INTEGER NOT NULL
   manager_id INTEGER
     FOREIGN KEY (role_id)
-        REFERENCES role(id)
+        REFERENCES roles(id)
         ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY (manager_id)
         REFERENCES employee(id)
